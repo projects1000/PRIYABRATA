@@ -1,0 +1,53 @@
+<div class="bootstrap-wrapper">
+    <div class="container">
+        <div class="row" style="Margin-top: -20px; Margin-left: 45px;">
+          <div class="col-md-8 offset-md-3">
+            <mat-card [ngStyle]="{ 'background-color': 'white' }"  style="margin-left:-100px;" >
+            <div class="container"   class="col-md-6 offset-md-3" >
+              <img src="../../../assets/logo.jpg" alt="" class="logo">            
+              <h1 style="margin-left:-4px; font-size:24px;" class ="text-left" >Teacher Registration</h1>
+            </div>
+           <!-- {{teacher | json}}  -->
+            <form (ngSubmit)="formSubmit()"  #register="ngForm" style="margin-left:60px; " >
+                <mat-form-field  class="width-75  ml-2  " >
+                    <mat-label >Name</mat-label>
+                    <input [(ngModel)]="teacher.name" name="name"  required matInput placeholder="Enter your name">                   
+                  </mat-form-field>
+                  <br>
+                  <mat-form-field appearance="fill" class="width-75  ml-2">
+                    <mat-label>Address</mat-label>
+                    <input [(ngModel)]="teacher.address" name="address" required matInput  >
+                  </mat-form-field>
+                  <br>
+                <mat-form-field  color="primary" appearance="fill" class="width-75 ml-2">
+                    <mat-label color="primary">Email</mat-label>
+                    <input matInput [(ngModel)]="teacher.email" name="email" type="email" required color="primary" placeholder="Enter Email" >
+                  </mat-form-field>
+                  <br>
+
+                  <mat-form-field appearance="fill" class="width-75  ml-2">
+                    <mat-label>Experience</mat-label>
+                    <input matInput [(ngModel)]="teacher.experience" name="experience" type="email" required placeholder="Enter your email">
+                  </mat-form-field>
+                  <br>
+                  <mat-form-field appearance="fill" class="width-75  ml-2" >
+                    <mat-label>Phone Number</mat-label>
+                    <input matInput [(ngModel)]="teacher.phone" name="phone" type="number" required placeholder="Enter Phone Number">
+                  </mat-form-field>
+                  <br>  
+                  <mat-form-field appearance="fill" class="width-75  ml-2" >
+                    <mat-label>Standard</mat-label>
+                    <input matInput [(ngModel)]="teacher.standard" name="standard" type="number" required placeholder="Enter the Standard you have experience">
+                  </mat-form-field>
+                  <br>          
+                <br>               
+                <button  type="submit" mat-raised-button  class="ml-2" style=" margin-left:60px; background-color:#6db886;">Register</button>
+                <button style="margin-left:10px;"  (click)="onResetClick()" mat-raised-button  class="ml-2" color="accent">Reset</button>
+              </form>
+           </mat-card>
+          </div>
+        </div>
+    </div>
+ 
+</div>
+

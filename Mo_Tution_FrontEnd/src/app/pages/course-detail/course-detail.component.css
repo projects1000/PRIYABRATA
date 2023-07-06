@@ -1,0 +1,29 @@
+.text-container {
+    position: relative;
+    /* background-image: url('../../../assets/blur.jpg'); */
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center center;
+    display: inline-block;
+    width: 200px;
+    height: 10px;
+    left:-60px;
+    padding-left: 20px;
+    color: #e8dede;
+  }
+  .internal-mat
+  {
+    position: relative;
+    width: 1123px;
+    height:1500px;
+    left:-126px;
+  }
+  .close.mat-button {
+    position: inherit;
+    top: 0;
+    right: 0;
+    padding: 2px;
+    line-height: 3px;
+    min-width: auto;
+  }
+ 

@@ -1,0 +1,49 @@
+<div  class="text-container" *ngFor="let card of cards" (click)="cardClicked(card)">
+    <mat-card  >
+  <mat-card-header>
+    <mat-card-title>{{card.phone}}</mat-card-title>
+    <mat-card-subtitle>{{card.email}}. {{card.name}}</mat-card-subtitle>
+  </mat-card-header>  
+    <img style="width:180px; height:100px;" mat-card-image src="../../../assets/{{card.name}}.jpg" alt="Placeholder Image">  
+  <mat-card-content>
+    {{card.content}}
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button matTooltip=" {{card.address}}!" color="primary" matTooltipPosition="after">Details</button>&nbsp;
+    <button style="font-size:10px;font-weight: bold;" mat-raised-button color="accent"  routerLink="/login">Book</button>
+  </mat-card-actions>
+</mat-card>&nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+
+
+<!-- <mat-card class="text-container" *ngFor="let card of cards" (click)="cardClicked(card)">
+  <mat-card-title>{{card.title}}</mat-card-title>
+  <mat-card-content>{{card.content}}</mat-card-content>
+</mat-card> -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Advertisement</title>
+  <style>
+    .advertise-button {
+      background-color: #ff5c5c;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Register as a Teacher</h1>
+  <p>Join with us for a novel work</p>
+  <button mat-raised-button color="primary" (click)="openDialog1('1000ms','1000ms')" >
+    Click Here
+  </button>
+
+</body>
+</html>

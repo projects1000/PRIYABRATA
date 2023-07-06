@@ -1,0 +1,52 @@
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 1px;
+    text-align: center;
+    height: 21px;
+  }
+
+header{
+    height: 36px;
+    background-color: #5c5e53;
+}
+
+.text-container {
+    position: relative;
+    background-image: url('../../../assets/blur.JPG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: inline-block;
+    width: 1385px;
+    height:580px;
+    top:-25px;
+    left:-15px;
+    right:100px;
+  }
+  
+  .text-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  
+    background-color: rgba(183, 223, 114, 0.7);
+    z-index: 1;
+  }
+
+    .tuition {
+      top:215px;
+      left:-15px;
+      right:100px;
+      display: flex;
+      align-items: flex-start;
+    }
+
+  

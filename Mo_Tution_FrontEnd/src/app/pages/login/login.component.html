@@ -1,0 +1,34 @@
+<div class="bootstrap-wrapper">
+        <div class="row" style="Margin-top: 20px; Margin-left: 210px;">
+          <div class="col-md-8 offset-md-3">
+            <mat-card [ngStyle]="{ 'background-color': 'white'  ,'width': '500px', 'height': '350px'}" style="margin-left:-40px;"class="mt-50" >
+            <div class="container"   class="col-md-6 offset-md-3"  style="margin-left:220px;">
+              <img src="../../../assets/logo.jpg" alt="" class="logo">                         
+            </div>
+            <h1 style="margin-left:240px; font-size:28px;" class ="text-left">Login</h1>
+            <!-- {{loginData | json}} -->
+            <form  (ngSubmit)="formSubmit()" #login="ngForm">
+                <mat-form-field appearance="fill" class="width-70  ml-20" style="margin-left:100px">
+                    <mat-label>Username</mat-label>            
+                    <input  name="username"  [(ngModel)]="loginData.username" required matInput placeholder="Enter your Username">                   
+                  </mat-form-field>
+                  <br>
+                  <mat-form-field appearance="fill" class="width-70   ml-20" style="margin-left:100px">
+                    <mat-label>Password</mat-label>
+                    <input name="password"  [(ngModel)]="loginData.password" required matInput type="password" >
+                  </mat-form-field>
+                  <br>
+                  <div class="container text-center"  style="margin-left:-80px">
+                    <button  type="submit" mat-raised-button  style="background-color:#6db886;">Login</button>
+                    <button style="margin-left:10px"  (click)="onResetClick()" mat-raised-button  color="accent" >Reset</button>
+                  </div>
+                  
+            </form>
+        </mat-card>
+        </div>
+            
+    </div>
+
+            
+</div>
+            

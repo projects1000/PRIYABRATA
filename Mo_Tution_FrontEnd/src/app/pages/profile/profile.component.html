@@ -1,0 +1,54 @@
+<mat-card *ngIf="user">
+    <h3 style="font-size:20px;font-weight: bold;" >Admin  Details</h3>
+    <!-- {{user | json}} -->
+    <mat-card-content>
+        <div class="bootstrap-wrapper">
+            <div class="container">
+                <div class="container text-center">
+                    <img
+            src="https://t4.ftcdn.net/jpg/03/46/93/61/360_F_346936114_RaxE6OQogebgAWTalE1myseY1Hbb5qPM.jpg"
+            alt=""
+            class="profile-image"
+          />
+          <h1 class="mt20">{{user.firstname}} {{user.lastname}}</h1>
+                </div>
+
+                <div class="row">
+                   
+                    <div class="col-md-10 offset-md-1">
+                        <table class="table text-center">
+                            <tr>
+                                <td>UserName</td>
+                                <td>{{user.username}}</td>
+                            </tr>
+                            <tr>
+                                <td>UserId</td>
+                                <td>MOTUITION{{user.id}}</td>
+                            </tr>
+                            <tr *ngIf="user.phone">
+                                <td>Phone Number:</td>
+                                <td>{{user.phone}}</td>
+                            </tr>
+                            <tr>
+                                <td>Role</td>
+                                <td>{{user.authorities[0].authority}}</td>
+                            </tr>
+                            <tr>
+                                <td>Status</td>
+                                <td>{{user.enabled?"ACTIVE":"NOT-ACTIVE"}}</td>
+                            </tr>
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+        </div>       
+    </mat-card-content>
+    <div id="center-div">
+        <mat-card-actions >
+            <button style="font-size:10px;font-weight: bold;" mat-raised-button color="primary">UPDATE</button> &nbsp; &nbsp;
+            <button style="font-size:10px;font-weight: bold;" mat-raised-button color="accent">SHARE</button>
+        </mat-card-actions>
+    </div>
+    
+</mat-card>

@@ -1,0 +1,21 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+.mat{
+    height: 40px;
+    background-color: #e79f9f;
+    background-image: url('../../../assets/blur.JPG');
+}
+
+.text-container {
+  position: relative;
+  background-image: url('../../../assets/blur.JPG');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: inline-block;
+  width: 1370px;
+  height:40px;
+}
+
+

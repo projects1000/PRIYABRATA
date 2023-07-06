@@ -1,0 +1,16 @@
+.width-70{width: 70%;}
+.ml-2{margin-left: 2%;}
+.ml-1{margin-left: 1%;}
+.ml-3{margin-left: 3%;}
+.ml-20{margin-left: 20%;}
+.logo {
+    width: 130px; /* set the desired width */
+    height: auto;
+   /* maintain aspect ratio */
+  }
+  .mat-card {
+    background-color: #a8e833; /* Replace with your desired color */
+    width: 100px;
+    height: 6px;
+  }
+

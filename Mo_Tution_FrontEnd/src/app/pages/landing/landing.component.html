@@ -1,0 +1,19 @@
+
+<div  style="left:190px;" class="text-container" *ngFor="let card of cards" (click)="cardClicked(card)">
+    <mat-card  >
+  <mat-card-header>
+    <mat-card-title>{{card.subject}}</mat-card-title>
+    <mat-card-subtitle> {{card.course}} </mat-card-subtitle>
+  </mat-card-header>  
+    <img  style="width:180px; height:100px;" routerLink="/{{card.course}}" mat-card-image src="../../../assets/{{card.course}}.jpg" alt="Placeholder Image">  
+  <mat-card-content>
+    {{card.content}}
+  </mat-card-content>
+  <mat-card-actions>
+        <button style="font-size:10px;font-weight: bold;" mat-raised-button color="accent"  routerLink="/{{card.course}}">Click Me</button>
+
+     </mat-card-actions>
+     
+</mat-card>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+

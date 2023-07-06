@@ -1,0 +1,35 @@
+<mat-card class="menu">
+    <mat-action-list >
+        <div class="link_item" mat-subheader  style="font-size:15px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight: normal; color:rgb(19, 39, 111);">Select Your Standard</div>
+        <!-- <button class="link_item" mat-list-item routerLink="/{{currentPageUrl}}/course"><mat-icon mat-list-icon style="color:rgb(29, 2, 2);">account_circle</mat-icon><a style="color:rgb(29, 2, 2);">Standard1</a></button> -->
+        <button class="link_item" mat-list-item [routerLink]="['/CBSE/cbse',1]"><mat-icon mat-list-icon style="color:rgb(29, 2, 2);">account_circle</mat-icon><a style="color:rgb(29, 2, 2);">Standard1</a></button>
+        <button class="link_item" mat-list-item routerLink="" ><mat-icon mat-list-icon style="color:rgb(29, 2, 2);">hail</mat-icon><a style="color:rgb(29, 2, 2);">Standard2</a></button>
+        <button class="link_item" mat-list-item routerLink=""><mat-icon mat-list-icon style="color:rgb(29, 2, 2);">account_circle</mat-icon><a style="color:rgb(29, 2, 2);">Standard3</a></button>
+        <button class="link_item" mat-list-item routerLink="/course" ><mat-icon mat-list-icon style="color:rgb(29, 2, 2);">hail</mat-icon><a style="color:rgb(29, 2, 2);">Standard4</a></button>
+        <button class="link_item"  mat-list-item routerLink=""><mat-icon mat-list-icon style="color:rgb(29, 2, 2);">school</mat-icon><a style="color:rgb(29, 2, 2);">Standard5</a></button>
+        <button class="link_item" mat-list-item [routerLink]="['/CBSE/cbse',6]"><mat-icon mat-list-icon style="color:rgb(29, 2, 2);">account_circle</mat-icon><a style="color:rgb(29, 2, 2);">Standard6</a></button>
+        <button class="link_item" mat-list-item routerLink=""><mat-icon mat-list-icon style="color:rgb(29, 2, 2);">school</mat-icon><a style="color:rgb(29, 2, 2);">Standard7</a></button>
+        <button class="link_item" mat-list-item routerLink=""><mat-icon mat-list-icon style="color:rgb(29, 2, 2);">school</mat-icon><a style="color:rgb(29, 2, 2);">Standard8</a></button>
+        <button class="link_item" mat-list-item routerLink=""><mat-icon mat-list-icon style="color:rgb(29, 2, 2);">school</mat-icon><a style="color:rgb(29, 2, 2);">Standard9</a></button>
+        <button class="link_item" mat-list-item routerLink=""><mat-icon mat-list-icon style="color:rgb(29, 2, 2);">school</mat-icon><a style="color:rgb(29, 2, 2);">Standard10</a></button>
+        </mat-action-list>
+</mat-card>
+
+<!-- <mat-nav-list>
+    <div class="logo py-4">
+      <img src="./assets/logo.svg" alt="Company Logo" />
+    </div>
+    <mat-divider></mat-divider>
+    <h2 matSubheader class="mt-2">APPLICATIONS</h2>
+  
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/home">
+      <mat-icon>home</mat-icon> Home
+    </a>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/dashboard">
+      <mat-icon>dashboard</mat-icon> Dashboard
+    </a>
+    <a mat-list-item> <mat-icon>edit</mat-icon> Link 3 </a>
+    <a mat-list-item> <mat-icon>edit</mat-icon> Link 4 </a>
+    <a mat-list-item> <mat-icon>edit</mat-icon> Link 5 </a>
+    <a mat-list-item> <mat-icon>edit</mat-icon> Link 6 </a>
+  </mat-nav-list> -->

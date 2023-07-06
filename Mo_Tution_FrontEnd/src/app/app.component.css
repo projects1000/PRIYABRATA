@@ -1,0 +1,25 @@
+/* .text-container {
+    position: relative;
+    background-image: url('../assets/blur.JPG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: inline-block;
+    width: 1440px;
+    height:580px;
+    top:95px;
+    left:-15px;
+    right:100px;
+  }
+  
+  .text-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  
+    background-color: rgba(250, 241, 241, 0.7);
+    z-index: 1;
+  } */
+  

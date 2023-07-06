@@ -1,0 +1,40 @@
+/* .link_item{
+    width:100%;
+    height:50x;
+    background: rgb(225, 247, 210);
+    margin-bottom:2px;
+    position:relative;
+}
+.link{
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    position:absolute;
+    background: red;
+
+} */
+
+.mdc-list{  
+    background-image: url('../../../assets/blur.JPG');
+    height:590px;
+    width:250px;
+    top:20;
+    left:40;
+    right:60;
+    bottom:0;
+    
+}
+
+.mat-mdc-card mdc-card menu{
+    border: solid;
+    height:22px;
+    width:-30px;
+   
+}
+.menu{
+    
+    height:580px;
+    width:250px;
+}
+
