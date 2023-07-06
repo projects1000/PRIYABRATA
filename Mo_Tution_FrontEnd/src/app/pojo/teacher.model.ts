@@ -4,6 +4,7 @@ export class Teacher {
     email?: string;
     phone?: number;
     experience?: number;
+    
     standard?: string[];
 
 }
