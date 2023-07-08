@@ -10,8 +10,13 @@
            <!-- {{teacher | json}}  -->
             <form (ngSubmit)="formSubmit()"  #register="ngForm" style="margin-left:60px; " >
                 <mat-form-field  class="width-75  ml-2  " >
-                    <mat-label >Name</mat-label>
-                    <input [(ngModel)]="teacher.name" name="name"  required matInput placeholder="Enter your name">                   
+                    <mat-label >FirstName</mat-label>
+                    <input [(ngModel)]="teacher.fname" name="fname"  required matInput placeholder="Enter your First name">                   
+                  </mat-form-field>
+                  <br>
+                  <mat-form-field  class="width-75  ml-2  " >
+                    <mat-label >LastName</mat-label>
+                    <input [(ngModel)]="teacher.lname" name="lname"  required matInput placeholder="Enter your Last name">                   
                   </mat-form-field>
                   <br>
                   <mat-form-field appearance="fill" class="width-75  ml-2">
@@ -27,7 +32,7 @@
 
                   <mat-form-field appearance="fill" class="width-75  ml-2">
                     <mat-label>Experience</mat-label>
-                    <input matInput [(ngModel)]="teacher.experience" name="experience" type="email" required placeholder="Enter your email">
+                    <input matInput [(ngModel)]="teacher.experience" name="experience" type="number" required placeholder="How many years of experience you have">
                   </mat-form-field>
                   <br>
                   <mat-form-field appearance="fill" class="width-75  ml-2" >
@@ -35,12 +40,52 @@
                     <input matInput [(ngModel)]="teacher.phone" name="phone" type="number" required placeholder="Enter Phone Number">
                   </mat-form-field>
                   <br>  
-                  <mat-form-field appearance="fill" class="width-75  ml-2" >
+                  <!-- <mat-form-field appearance="fill" class="width-75  ml-2" >
                     <mat-label>Standard</mat-label>
                     <input matInput [(ngModel)]="teacher.standard" name="standard" type="number" required placeholder="Enter the Standard you have experience">
                   </mat-form-field>
-                  <br>          
-                <br>               
+                  <br>  -->
+                  <!-- <div  *ngFor="let item of _courselist" class="row">
+                  <th>
+                      <div ><input type="checkbox" name="{{item.name}}"></div>
+                      <div><label>{{item.name}}</label></div>
+                    </th>
+                  </div> -->
+                  
+                  <div class="container mt-5">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col">
+                           
+                          </th>
+                          <th scope="col">Select the Class You have Experienc</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr *ngFor="let n of standard; ">
+                         
+                          <th scope="row">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              [value]="n.id"
+                              [checked]="n.select"
+                              (change)="onChangeStandard($event)"
+                            />
+                          </th>
+                          <td>{{ n.name }}</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                <br>  
+                <!-- <b>Select the standar you are teaching</b>
+                <div class="checkbox-container" *ngFor="let item of items">
+                  <input type="checkbox" id="{{ item.id }}" [(ngModel)]="item.checked">
+                  <label [ngClass]="{ 'checked': item.checked }" for="{{ item.id }}">{{ item.label }}</label>
+                </div> -->
                 <button  type="submit" mat-raised-button  class="ml-2" style=" margin-left:60px; background-color:#6db886;">Register</button>
                 <button style="margin-left:10px;"  (click)="onResetClick()" mat-raised-button  class="ml-2" color="accent">Reset</button>
               </form>
