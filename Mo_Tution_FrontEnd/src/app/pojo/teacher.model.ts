@@ -1,10 +1,14 @@
 export class Teacher {
-    name?: string;
+    fname?: string;
+    lname?: string;
     address?:string;
     email?: string;
     phone?: number;
     experience?: number;
-    
-    standard?: string[];
-
+    standard?:number[];
 }
+// class Course {
+//     id?: number;
+    
+   
+// }

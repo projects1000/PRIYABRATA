@@ -1,4 +1,5 @@
 export class Course {
     id:number=0;
-    courseName:string='';
+    name:string='';
+    select:boolean=false;
 }
